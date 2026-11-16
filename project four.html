@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+ <html lang="ja">
+     <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>現在開発中</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    html {
+        background-color: #1c1b1b;
+    }
+    body {
+        margin: 0;
+        padding: 20px;
+        min-height: 100vh;
+        background-color: #1c1b1b;
+        color: aliceblue;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        width: 100%;
+        max-width: 750px;
+        text-align: center;
+    }
+    h1 {
+        margin: 0;
+        font-size: clamp(40px, 10vw, 70px);
+        color: #ff7043;
+    }
+    .subtitle {
+        margin-top: 15px;
+        font-size: clamp(18px, 4vw, 24px);
+        color: #aaa;
+    }
+    .card {
+        margin-top: 35px;
+        padding: 35px 25px;
+        background-color: #303030;
+        border-radius: 20px;
+        border: 1px solid #444;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+    .icon {
+        font-size: 60px;
+        margin-bottom: 15px;
+    }
+    .card h2 {
+        margin: 0 0 20px;
+        font-size: clamp(25px, 6vw, 35px);
+        color: #ffffff;
+    }
+    .card p {
+        margin: 12px 0;
+        color: #ccc;
+        font-size: 17px;
+        line-height: 1.8;
+    }
+    .status {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        background-color: #ff7043;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin-top: 25px;
+    }
+    .feature {
+        padding: 20px 10px;
+        background-color: #242424;
+        border-radius: 12px;
+    }
+    .feature h3 {
+        margin: 0 0 10px;
+        color: #42a5f5;
+        font-size: 18px;
+    }
+    .feature p {
+        margin: 0;
+        color: #aaa;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .footer {
+        margin-top: 25px;
+        color: #666;
+        font-size: 14px;
+    }
+    @media (max-width: 600px) {
+        body {
+            padding: 15px;
+        }
+        .card {
+            padding: 30px 18px;
+            margin-top: 25px;
+        }
+        .icon {
+            font-size: 50px;
+        }
+        .card p {
+            font-size: 15px;
+        }
+        .features {
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+        .feature {
+            padding: 15px;
+        }
+        .feature h3 {
+            font-size: 17px;
+        }
+        .feature p {
+            font-size: 14px;
+        }
+        .status {
+            font-size: 14px;
+        }
+    }
+</style>
+</head> <body>
+<div class="container">
+    <h1>Project</h1>
+    <div class="subtitle">
+        現在、新しいツールを開発しています
+    </div>
+    <div class="card">
+        <div class="icon">
+            🛠️
+        </div>
+        <h2>Tool is Coming Soon</h2>
+        <p>
+            現在、より便利に使えるツールの開発に取り組んでいます。
+        </p>
+        <p>
+            まだ開発途中ですが、使いやすさや機能性を意識して
+            少しずつ制作を進めています。
+        </p>
+        <div class="status">
+            ● 現在開発中
+        </div>
+        <div class="features">
+            <div class="feature">
+                <h3>Development</h3>
+                <p>
+                    現在、機能の開発を進めています。
+                </p>
+            </div>
+            <div class="feature">
+                <h3>Improvement</h3>
+                <p>
+                    より使いやすくなるよう改善しています。
+                </p>
+            </div>
+            <div class="feature">
+                <h3>Coming Soon</h3>
+                <p>
+                    完成したら公開する予定です。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        More information will be available soon.
+    </div>
+</div>
+</body> 
+</html>

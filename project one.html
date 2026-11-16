@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html lang="ja">
+     <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project One</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    html {
+        background-color: rgb(28, 27, 27);
+    }
+    body {
+        margin: 0;
+        padding: 20px;
+        color: aliceblue;
+        font-family: sans-serif;
+    }
+    h1 {
+        text-align: center;
+        font-size: clamp(35px, 8vw, 50px);
+    }
+    .subtitle {
+        text-align: center;
+        font-size: 20px;
+        color: #aaa;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+    }
+    .card {
+        background-color: #333;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .card h2 {
+        margin-top: 0;
+    }
+    .card p {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+    code {
+        display: block;
+        background-color: #111;
+        color: #00ff88;
+        padding: 15px;
+        border-radius: 8px;
+        overflow-x: auto;
+        font-family: monospace;
+    }
+    .html h2,
+    .html p {
+        color: #ff7043;
+    }
+    .css h2,
+    .css p {
+        color: #42a5f5;
+    }
+    .javascript h2,
+    .javascript p {
+        color: #ffd740;
+    }
+    @media (max-width: 600px) {
+        body {
+            padding: 15px;
+        }
+        .card {
+            padding: 15px;
+        }
+        .card p {
+            font-size: 16px;
+        }
+    }
+</style>
+</head> <body>
+<div class="container">
+    <h1>Project One</h1>
+    <p class="subtitle">
+        HTML + CSS + JavaScript
+    </p>
+    <hr>
+    <div class="card html">
+        <h2>HTML</h2>
+        <p>
+            HTMLは、Webページの「内容」や「構造」を作るための言語です。
+        </p>
+        <p>
+            例えば、見出しや文章、画像、ボタンなどを作ることができます。
+        </p>
+        <code>
+<h1>Hello World!</h1>
+</code>
+</div>
+    <div class="card css">
+        <h2>CSS</h2>
+        <p>
+            CSSは、Webページの「見た目」を変えるために使います。
+        </p>
+        <p>
+            色、大きさ、位置、背景、レイアウトなどを設定できます。
+        </p>
+        <code>
+h1 {
+color: blue;
+font-size: 40px;
+}
+</code>
+</div>
+    <div class="card javascript">
+        <h2>JavaScript</h2>
+        <p>
+            JavaScriptは、Webページに「動き」や「機能」を追加するために使います。
+        </p>
+        <p>
+            ボタンを押したときの処理や、文字を変更するなど、さまざまなことができます。
+        </p>
+        <code>
+alert("Hello World!");
+</code>
+</div>
+    <div class="card">
+        <h2>まとめ</h2>
+        <p>
+            HTML → Webページの構造
+            <br>
+            CSS → Webページの見た目
+            <br>
+            JavaScript → Webページの動き
+        </p>
+    </div>
+</div>
+</body> 
+</html>

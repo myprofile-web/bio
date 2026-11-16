@@ -1,0 +1,214 @@
+<!DOCTYPE html> 
+<html lang="ja">
+     <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discord Bot</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    html {
+        background-color: #1c1b1b;
+    }
+    body {
+        margin: 0;
+        padding: 20px;
+        background-color: #1c1b1b;
+        color: aliceblue;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    h1 {
+        text-align: center;
+        font-size: clamp(35px, 8vw, 50px);
+        margin-bottom: 10px;
+    }
+    .subtitle {
+        text-align: center;
+        font-size: 20px;
+        color: #aaa;
+    }
+    hr {
+        border: none;
+        border-top: 1px solid #555;
+        margin: 25px 0;
+    }
+    .card {
+        background-color: #303030;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+    .card h2 {
+        margin-top: 0;
+        color: #5865F2;
+        font-size: 28px;
+    }
+    .card p {
+        color: #ddd;
+        font-size: 17px;
+        line-height: 1.8;
+    }
+    .code-block {
+        background-color: #111;
+        border-radius: 10px;
+        padding: 16px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .code-block pre {
+        margin: 0;
+        white-space: pre;
+    }
+    .code-block code {
+        color: #00ff88;
+        font-family: Consolas, Monaco, monospace;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .note {
+        background-color: #242424;
+        border-left: 4px solid #5865F2;
+        padding: 12px 15px;
+        margin-top: 15px;
+        color: #bbb;
+        border-radius: 5px;
+    }
+    @media (max-width: 600px) {
+        body {
+            padding: 12px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        .subtitle {
+            font-size: 16px;
+        }
+        .card {
+            padding: 16px;
+            margin-bottom: 15px;
+        }
+        .card h2 {
+            font-size: 24px;
+        }
+        .card p {
+            font-size: 15px;
+        }
+        .code-block {
+            padding: 12px;
+        }
+        .code-block code {
+            font-size: 12px;
+        }
+    }
+</style>
+</head> <body>
+<div class="container">
+    <h1>Discord Bot</h1>
+    <div class="subtitle">
+        Discordをもっと便利にするBot
+    </div>
+    <hr>
+    <div class="card">
+        <h2>Discord Botとは？</h2>
+        <p>
+            Discord Botは、Discord上で自動的に動作するプログラムです。
+        </p>
+        <p>
+            メッセージに反応したり、コマンドを実行したり、
+            サーバーの管理を自動化したりすることができます。
+        </p>
+        <div class="note">
+            Botを使うことで、Discordにさまざまな機能を追加できます。
+        </div>
+    </div>
+    <div class="card">
+        <h2>Discord Botでできること</h2>
+        <p>
+            ・メッセージへの自動返信
+        </p>
+        <p>
+            ・コマンドの実行
+        </p>
+        <p>
+            ・サーバーの管理
+        </p>
+        <p>
+            ・音楽やゲームなどの機能
+        </p>
+        <p>
+            ・定期的なメッセージの送信
+        </p>
+    </div>
+    <div class="card">
+        <h2>PythonでBotを作る</h2>
+        <p>
+            Discord BotはPythonを使って作ることもできます。
+            Pythonでは、Discord Botを作るためのライブラリを利用できます。
+        </p>
+        <p>
+            例えば、Botが起動したときにメッセージを表示する処理は次のように書けます。
+        </p>
+        <div class="code-block">
+            <pre><code>import discord
+client = discord.Client()
+@client.event
+async def on_ready():
+print("Botが起動しました！")
+client.run("TOKEN")</code></pre>
+</div>
+        <div class="note">
+            TOKENの部分には実際のBotトークンを入れます。
+            ただし、トークンは他の人に公開しないでください。
+        </div>
+    </div>
+    <div class="card">
+        <h2>コマンドを作る</h2>
+        <p>
+            Botにコマンドを追加すると、
+            特定のコマンドが入力されたときに処理を実行できます。
+        </p>
+        <div class="code-block">
+            <pre><code>@bot.command()
+async def hello(ctx):
+await ctx.send("Hello!")</code></pre>
+</div>
+        <p>
+            この例では、「hello」というコマンドを作っています。
+            コマンドを実行すると、Botが「Hello!」と返信します。
+        </p>
+    </div>
+    <div class="card">
+        <h2>注意</h2>
+        <p>
+            Botのトークンは非常に重要な情報です。
+        </p>
+        <p>
+            トークンを他の人に教えたり、
+            GitHubなどの公開場所にそのまま載せたりしないようにしましょう。
+        </p>
+        <div class="note">
+            TOKENはパスワードのように大切に管理しましょう。
+        </div>
+    </div>
+    <div class="card">
+        <h2>まとめ</h2>
+        <p>
+            Discord Botは、Discord上で自動的に動作するプログラムです。
+        </p>
+        <p>
+            Pythonなどのプログラミング言語を使うことで、
+            自動返信、コマンド、サーバー管理など、
+            さまざまな機能を追加できます。
+        </p>
+    </div>
+</div>
+</body> 
+</html>
